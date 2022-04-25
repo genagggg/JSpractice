@@ -114,20 +114,62 @@ if ("name" in userInfo) {
 //Цикл "for_in"
 */
 
-let userInfo = {
-    name: "Gena",
-    age: 31,
-    address: {
-        city: "V_Salda",
-        street: "Evstigneeva"
+// let userInfo = {
+//     name: "Gena",
+//     age: 31,
+//     address: {
+//         city: "V_Salda",
+//         street: "Evstigneeva"
+//     }
+// }
+// for (let key in userInfo) {
+//     console.log(key)
+//     console.log(userInfo[key])
+// }
+
+// for (let key in userInfo.address) {
+//     console.log(key);
+//     console.log(userInfo.address[key]);
+// }
+
+// const person = {
+//     name: "Andrey",
+//     age: 28,
+//     greet: function () {
+//         console.log('Greet!')
+//     }
+// }
+
+// const person = new Object({
+
+
+//     name: "Andrey",
+//     age: 28,
+//     greet: function () {
+//         console.log('Greet!')
+//     }
+// }
+// )
+
+// Object.prototype.sayHello = function () {
+//     console.log('muuuu')
+// }
+
+// const lena = Object.create(person)
+
+const person = new Object({
+    name: 'eee',
+    age: 23,
+    greet: function () {
+        console.log('hello')
     }
-}
-for (let key in userInfo) {
-    console.log(key)
-    console.log(userInfo[key])
+})
+
+Object.prototype.sayHello = function () {
+    console.log('sayHe')
 }
 
-for (let key in userInfo.address) {
-    console.log(key);
-    console.log(userInfo.address[key]);
-}
+const lena = Object.create(person)
+lena.name = 'Elena'
+
+const str = new String('I am string')
